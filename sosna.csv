@@ -1,4 +1,4 @@
-Plot ID;N;E;Soil type;Age;N;G;Hg;V;AB;BR;FL;ST
+Plot ID;N;E;Soil type;Age;dens;G;Hg;V;AB;BR;FL;ST
 Forest - 183d;51.3192;17.2899;Albic Brunic Arenosol;3;6179;0;1.014;1.232;2.473;0.8369;1.4641;0.4621
 Forest - 91c;53.9168;17.5828;Albic Podzols;3;10000;0;0.517;0.135;0.2778;0.0535;0.1284;0.0857
 Forest - 93c;53.9161;17.5721;Albic Podzols;3;10900;0;0.334;0.057;0.1738;0.038;0.1435;0.057
