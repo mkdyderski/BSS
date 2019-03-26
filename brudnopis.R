@@ -1,0 +1,1 @@
+###Brudnopis - kod użyty do stworzenia częsci obrazków i pomocy
