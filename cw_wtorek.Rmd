@@ -4,16 +4,12 @@ author: "Marcin K. Dyderski, Patryk Czortek"
 date: "2 kwietnia 2019"
 output: pdf_document
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## Zadania do wykonania
 
 1. Z GitHuba pobierz dataset z cechami roślin, link: [https://github.com/mkdyderski/BSS/blob/BSS2019/datasety/vege_1517_traits.csv]. Możesz również ściągnąć go do R za pomocą funkcji `read.csv()`:
 ```{r, eval=FALSE}
-baza<-read.csv('https://raw.githubusercontent.com/mkdyderski/BSS/BSS2019/datasety/vege_1517_traits.csv',sep=';')
+baza<-read.csv('https://raw.githubusercontent.com/mkdyderski/BSS/BSS2019/datasety/vege_1517_traits.csv',
+               sep=';')
 ```
 
 2. Sprawdź które kolumny zawierają zmienne liczbowe, a które tekstowe
@@ -22,7 +18,8 @@ baza<-read.csv('https://raw.githubusercontent.com/mkdyderski/BSS/BSS2019/dataset
 5. Wykonaj boxploty dla seed_mass w ramach strategy 
 6. Podaj srednie wartosci kilku wybranych cech dla grup hg (historyczno-geograficznych) i wykonaj wykres słupkowy (srednie + SE)
 
-7. Wczytaj *własny zbiór danych* i poznaj jego strukturę - jakie rozkłady mają poszczególne zmienne?
+##Propozycje do pracy z własnym zbiorem danych
+7. Wczytaj *własny zbiór danych* i poznaj jego strukturę i zakresy zmiennych - jakie rozkłady mają poszczególne zmienne? Czy są obserwacje odstające? Eksploracja danych pozwala wykryć wartości nielogiczne z biologicznego punktu widzenia biologicznego i naprawić je przed właściwymi analizami.
 8. Wykonaj wykres punktowy pokazujący relacje pomiędzy cechami dla których zakładasz występowanie pewnych zależności, dodaj linię trendu i oceń czy jest w miarę sensownie dopasowana. W przypadku wątpliwosci poproś prowadzących o podpowiedź odnośnie typu linii trendu. Możesz zestawić np. sukces reprodukcyjny z cechami środowiska czy występowanie gatunków (0-1) z dostępnością zasobów.  
 9. Sprawdź czy zmienne liczbowe różnią sie pomiędzy grupami (bez testów, na razie tylko wizualnie). Możesz np. sprawdzić bogactwo gatunkowe w różnych wariantach, wartości odbicia widma dla różnych gatunków, masę czy wielkość prób dla różnych terminów lub indeks heterotermii dla różnych osobników.
 10. Sprawdź, czy proste przeliczenie pozwoli dać Ci kolejną cechę do analiz. Być może wystarczy podzielić masę przez objętość by zyskać gęstość? Albo określić udział gildii/grup funkcjonalnych organizmów? Spróbuj wykorzystać do tego pakiet dplyr.

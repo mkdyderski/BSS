@@ -1,8 +1,52 @@
 ###Brudnopis - kod użyty do stworzenia częsci obrazków i pomocy
 library(tidyverse)
+
+summary(glm(richness~a,data=prunus, family=poisson()))
+ggplot(prunus, aes(x=a,y=richness))+geom_point()+geom_smooth(method = 'glm', method.args=list(family='poisson'),col='darkgreen')+theme_bw()+geom_smooth(method='lm',col='red')
+
+ggplot(prunus, aes(x=shannon,y=richness))+geom_point()+geom_smooth(method = 'glm', method.args=list(family='poisson'),col='darkgreen')+theme_bw()+geom_smooth(method='lm',col='red')
+
+mod1<-lm(prunusc~richness,prunus)
+mod2<-glm(prunusc~richness, prunus, family=poisson())
+AIC(mod1,mod2)
+
+ggplot(prunus, aes(x=richness,y=prunusc))+geom_point()+geom_smooth(method = 'glm', method.args=list(family='poisson'),col='darkgreen')+theme_bw()+geom_smooth(method='lm',col='red')
+
 ###eksplotracja
 eks<-read.csv('datasety/vege_1517_traits.csv',sep=';')
 class(eks)
+
+
+#lichenes
+lichenes<-read.csv('datasety/lichenes1.csv',sep=';')
+
+model<-glm(Rich~EIV_N+habitat+time, data=lichenes)
+summary(model)
+
+model2<-glm(Rich~EIV_N+habitat+time, data=lichenes, family=poisson)
+summary(model2)
+
+
+model<-glm(prunusc~richness,data=prunus)
+summary(model)
+
+model2<-glm(prunusc~richness,data=prunus, family=poisson)
+summary(model2)
+
+library(pscl)
+model3<-zeroinfl(prunusc~richness|richness, data=prunus) #kreska jest ważna
+summary(model3)
+
+AIC(model, model2, model3)
+
+plot(hist(prunus$richness))
+
+
+afis<-read.csv('datasety/afis.csv',sep=';')
+
+mm<-glm(Ficavern~OLDFR,afis, family=binomial(link='logit'))
+library(multcomp)
+cld(glht(mm, mcp=(OLDFR='Tukey')))
 
 library(GGally)
 ggpairs(eks[,c(2,4:24)])
@@ -101,8 +145,60 @@ summary(lm(predict(mm)~sosny$AB))
 dupa<-read.csv('https://raw.githubusercontent.com/mkdyderski/BSS/BSS2019/datasety/vege_1517_traits.csv',sep=';')
 
 
+library(lmerTest);library(tidyverse)
 
+hotspots<-read.csv('datasety/hotspots.csv',sep=';')
+
+mod<-lm(plants~mammals+mainl,data=hotspots)
+summary(mod)
+
+ggplot(hotspots, aes(x=mammals,y=plants,col=mainl))+geom_point()+theme_bw()+geom_smooth(method='lm')
+
+ggplot(hotspots, aes(x=mammals,y=plants,col=mainl,shape=continent))+geom_point()+theme_bw()+geom_smooth(method='lm')
+confint(mod2)
+
+mod2<-lmer(plants~mammals+(1|continent),hotspots)
+summary(mod2)
+
+mod3<-lmer(plants~mammals+(mammals|continent),hotspots)
+summary(mod3)
+
+coef(mod2)
+
+coef(mod3)
+r.squaredGLMM(mod2)
+r.squaredGLMM(mod3)
+
+
+AIC(mod, mod2, mod3)
 
 #czeremcha
 prunus<-read.csv('datasety/prunus.csv',sep=';')
 summary(prunus)
+
+
+
+survi<-read.csv('datasety/survi.csv',sep=';')
+
+
+mod.lm<-glm(surv~light,family=binomial(link='logit'),survi)
+mod<-glmer(surv~light+(1|plot:blok)+(1|rok),family=binomial(link='logit'),survi)
+
+ggplot(survi, aes(x=light, y=surv, col=factor(rok)))+geom_point()+geom_smooth(method='glm',method.args=list(family='binomial'))
+
+
+mod2<-glmer(surv~light+(light|plot:blok)+(1|rok),family=binomial(link='logit'),survi)
+mod3<-glmer(surv~light+(light|plot:blok)+(light|rok),family=binomial(link='logit'),survi)
+mod4<-glmer(surv~light+(1|plot:blok)+(light|rok),family=binomial(link='logit'),survi)
+
+AIC(mod.lm, mod,mod2,mod3,mod4)
+
+
+confint(mod)
+
+summary(mod4)
+
+summary(mod)
+summary(mod.lm)
+AIC(mod.lm, mod)
+r.squaredGLMM(mod4)

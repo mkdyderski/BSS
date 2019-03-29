@@ -1,0 +1,194 @@
+species;strategy;self-st;canopy_height;leaf_distribution;leaf_dmc;leaf_mass;leaf_size;seed_mass;seed_number_per_shoot;SLA;EIV_L;EIV_T;EIV_M;EIV_N
+Achillea millefolium;c (competitors);SI (self-incompatibel);0,3955;leaves distributed regularly along the stem ;185,5;21,76333333;411;0,131833333;4969,69375;2,215633423;4;3,5;2,5;3,5
+Aegopodium podagraria;c (competitors);SC (self-compatibel);0,558333333;semi-rosette;230;753,5581651;13500,242;1,680933333;2131,954054;58,69670435;3,5;3,5;3,5;4
+Agrimonia eupatoria;c (competitors);SC (self-compatibel);0,333333333;semi-rosette;339,5;494,5374473;8461;14,178;43,2;24,92194404;5;4,5;2,5;3
+Agrostis canina;csr (competitors/stress-tolerators/ruderals);SI (self-incompatibel);0,3;semi-rosette ;281,985;1,950036232;67;0,055485714;385148;0,237601291;4;NA;4;3
+Agrostis capillaris;csr (competitors/stress-tolerators/ruderals);SI (self-incompatibel);0,25;semi-rosette;259,6675;10,18646216;335,6666667;0,0641;24993,99167;1,292678778;4;3,5;2,5;3,5
+Agrostis gigantea;c (competitors);SI (self-incompatibel);0,975;semi-rosette;241,17;9,945;304,5;0,079942857;251,6818182;1,26259485;4;3,5;3;3,5
+Agrostis stolonifera;csr (competitors/stress-tolerators/ruderals);SI (self-incompatibel);NA;semi-rosette;273,305;9,408257568;365,6666667;0,047775;62463,25;1,337943567;4;3,5;4;3,5
+Ajuga reptans;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,161666667;semi-rosette ;153;17,36967841;556;1,46519;2478,833333;3,633986928;3;3,5;3;3,5
+Alchemilla glabra;csr (competitors/stress-tolerators/ruderals);NA;0,22875;semi-rosette ;243,4783333;106,7631327;1535,636429;0,447633333;68,125;6,307076312;4;2;4;4
+Alnus glutinosa;c (competitors);SI (self-incompatibel);14,33333333;leaves distributed regularly along the stem ;248;NA;3462,95;2,3111;NA;13,96350806;3;4;5;3,5
+Alopecurus pratensis;c (competitors);SI (self-incompatibel);0,45;leaves distributed regularly along the stem ;308,06;43,4306142;1088,125;0,658;45361,375;3,532185289;4;3,5;4;4
+Anemone nemorosa;csr (competitors/stress-tolerators/ruderals);SI (self-incompatibel);0,138333333;semi-rosette;205;123,8710231;3003;2,1444;2151,730894;14,64878049;3;3,5;3;3,5
+Angelica sylvestris;c (competitors);SC (self-compatibel);0,783333333;leaves distributed regularly along the stem ;220;1531,2;40902;2,421444444;11950,092;185,9181818;3,5;3,5;4;4
+Anthoxanthum odoratum;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,165;semi-rosette ;258,75;2,31;NA;0,62875;8793,390668;NA;4;3,5;3;3
+Arrhenatherum elatius;c (competitors);SI (self-incompatibel);1,275;semi-rosette ;291,3166667;30,65406338;1223;3,079493333;8390,222223;4,198180674;4;4;3;4
+Avenula pubescens;c (competitors);SC (self-compatibel);0,6;semi-rosette;264;36,4756695;855;1,92416;1135,86;3,238636364;4;4;3,5;3
+Betonica officinalis;c (competitors);SC (self-compatibel);NA;semi-rosette;NA;NA;NA;NA;NA;NA;3,5;4,5;3;3
+Betula pendula;c (competitors);SI (self-incompatibel);27;leaves distributed regularly along the stem ;273;NA;1181,1;0,188353846;15674,2;4,326373626;4;3,5;3;2,5
+Briza media;csr (competitors/stress-tolerators/ruderals);SI (self-incompatibel);0,165;semi-rosette ;298,035;26,96524982;644;0,401122222;6556,407143;2,160820038;4;3;3;3
+Bromus inermis;c (competitors);SI (self-incompatibel);0,475;semi-rosette ;255;115,5;2796;3,5476;1427,373016;10,96470588;5;4,5;2,5;3
+Calamagrostis epigejos;c (competitors);SI (self-incompatibel);1;semi-rosette ;400,0333333;258,1944295;4994,5;0,079733333;173453,0857;12,48520957;4;3,5;3;3
+Caltha palustris;csr (competitors/stress-tolerators/ruderals);SI (self-incompatibel);0,2625;semi-rosette ;166;1004,54014;19640;1,025254545;11464,41538;118,313253;4;3,5;5;4
+Campanula glomerata;csr (competitors/stress-tolerators/ruderals);SI (self-incompatibel);0,173333333;semi-rosette ;221,3333333;39,92811957;916;0,13675;9801;4,138554217;4;3;3;3
+Campanula patula;csr (competitors/stress-tolerators/ruderals);SI (self-incompatibel);0,275;leaves distributed regularly along the stem ;NA;NA;NA;0,024586667;603350;NA;5;3;3;3,5
+Cardamine pratensis;csr (competitors/stress-tolerators/ruderals);SI (self-incompatibel);0,25;semi-rosette ;199,5;59,8028147;1027;0,591222222;21621,27273;5,147869674;4;3,5;4;4
+Carex acutiformis;cs (competitors/stress-tolerators);SC (self-compatibel);0,75;semi-rosette ;333,43;430,7;7035;0,864166667;424;21,09888132;3,5;4;5;4
+Carex bauxbaumii;cs (competitors/stress-tolerators);SC (self-compatibel);NA;semi-rosette ;280,9;392,25;4341;1,31;118,7916667;15,45389818;4;4;5;3,5
+Carex caespitosa;cs (competitors/stress-tolerators);SI (self-incompatibel);NA;semi-rosette ;267,135;95,815;1394;NA;89,63636364;5,218335299;4;4;5;3
+Carex dioica;cs (competitors/stress-tolerators);SC (self-compatibel);0,1;semi-rosette ;369,995;2,71;34,21333333;0,551566667;7,5;0,092469718;4;3;5;3
+Carex disticha;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,425;leaves distributed regularly along the stem ;330,11;34,65;NA;0,7609;1053,833333;NA;4;4;5;4
+Carex flacca;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,275;semi-rosette ;332,9625;34,84894372;634,75;1,015118182;1741,533333;1,906370838;4;3,5;4;3
+Carex flava;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);NA;semi-rosette ;245,43;16,185;331;0,861541667;4539,618;1,348653384;4;3;5;4
+Carex hartmanii;cs (competitors/stress-tolerators);SC (self-compatibel);NA;semi-rosette ;NA;NA;NA;1,06375;NA;NA;NA;NA;NA;NA
+Carex hirta;c (competitors);SC (self-compatibel);0,45;semi-rosette ;291,2125;74,8266342;1718,5625;2,8165;19315,875;5,901403614;4;3,5;3;3
+Carex hostiana;cs (competitors/stress-tolerators);SC (self-compatibel);0,2;semi-rosette ;353,91;7,15;115,75;1,273346429;38,60869565;0,327060552;4;4;5;3
+Carex lepidocarpa;cs (competitors/stress-tolerators);SC (self-compatibel);0,525;semi-rosette ;336,5;43,64960512;718,5;0,778;66,63636364;2,135215453;4;3,5;4;3
+Carex nigra;s (stress-tolerators);SI (self-incompatibel);0,11;semi-rosette ;372,3966667;16,672;159,1766667;0,73964;39562,41667;0,427438484;4;3;4,5;3
+Carex ovalis;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,235;semi-rosette ;336;21,84486572;476;0,50255;1725,108333;1,416666667;4;3;3,5;3
+Carex pallescens;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,325;semi-rosette ;264,57;14,635;526,5;1,252583333;2957,33913;1,990021544;4;3,5;3,5;3
+Carex panicea;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,15;semi-rosette ;384,85;22,06178186;611;2,341057143;18648,25;1,587631545;4;3,5;4;3
+Carex pilulifera;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,1;semi-rosette ;328;10,26045949;209;1,226612903;34,44642857;0,637195122;3,5;3,5;3;2,5
+Carex praecox;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,165;semi-rosette ;NA;NA;NA;NA;4781,333334;NA;5;5;2;2
+Carex spicata;cs (competitors/stress-tolerators);SC (self-compatibel);0,275;semi-rosette ;249,6333333;16,29;324,3333333;2,38878;27900;1,299238884;4;3,5;2,5;3
+Carex sylvatica ;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,425;semi-rosette ;324;29,75434925;677;1,663953846;736;2,089506173;2,5;3,5;3,5;4
+Carex tomentosa;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,375;semi-rosette ;354,65;25,63;465,5;1,094333333;48,28571429;1,312561681;4;4;2,5;3
+Carex vesicaria;cs (competitors/stress-tolerators);SC (self-compatibel);0,55;semi-rosette ;320,11;99,85;1222;1,391188889;14888,175;3,817437756;4;3,5;5;3,5
+Carex vulpina;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);NA;semi-rosette ;315,495;100,5966667;1607,375;1,365766667;1718,097223;5,094771708;4;3,5;5;4
+Centaurea jacea;c (competitors);SI (self-incompatibel);0,85;leaves distributed regularly along the stem ;219,59;NA;NA;1,98996;2977,815385;NA;4;3,5;3;4
+Centaurea pseudophrygia ;c (competitors);NA;0,6;leaves distributed regularly along the stem ;145,245;148,39;4830,065;NA;218,5;33,25460429;3,5;3;3;4
+Cerastium holosteoides;cr (competitors/ruderals);SC (self-compatibel);NA;leaves distributed regularly along the stem ;NA;NA;NA;NA;NA;NA;4;3;3,5;3,5
+Cirsium arvense;c (competitors);SC (self-compatibel);0,8625;leaves distributed regularly along the stem;141,6566667;190,5354895;3857,5;1,245544444;13516,22222;27,23133398;5;4;2,5;3,5
+Cirsium palustre;c (competitors);SC (self-compatibel);0,85;semi-rosette ;NA;NA;NA;1,562142857;8686,072727;NA;4;3;4;3
+Cirsium rivulare;cs (competitors/stress-tolerators);SC (self-compatibel);0,35;semi-rosette ;NA;NA;NA;2,379166667;NA;NA;5;3,5;4,5;4
+Cnidium dubium;c (competitors);SC (self-compatibel);0,475;semi-rosette ;235,44;90,51;2194,625;0,942666667;NA;9,321376996;4;4;4;3
+Colchicum autumnale;csr (competitors/stress-tolerators/ruderals);SI (self-incompatibel);0,225;semi-rosette ;130,49;254,88;5411,05;6,24995;17415,19133;41,46716223;3,5;3,5;3,5;4
+Comarum palustre;cs (competitors/stress-tolerators);SC (self-compatibel);0,35;leaves distributed regularly along the stem;264,86;115,855;1944,25;0,4414;914,25;7,340670543;4;3,5;5;2
+Crataegus monogyna;c (competitors);SI (self-incompatibel);4,885;leaves distributed regularly along the stem ;336,1428571;NA;491,14;167,573325;1,5;1,461104972;4;4,5;3,5;4
+Crepis biennis;cr (competitors/ruderals);NA;0,575;leaves distributed regularly along the stem ;132,5;189,0149904;6087,5;1,3082;14053,79167;45,94339623;4;3,5;3;4
+Crepis paludosa;c (competitors);SI (self-incompatibel);0,45;semi-rosette ;140;61,04492871;2260;0,6532;493,2894737;16,14285714;3;3;4,5;4
+Cruciata glabra;csr (competitors/stress-tolerators/ruderals);NA;0,2;leaves distributed regularly along the stem ;NA;NA;NA;1,43;243185,3333;NA;3,5;3;3,5;3,5
+Dactylis glomerata;c (competitors);SI (self-incompatibel);0,454;semi-rosette;262,5;49,90229255;1449;0,9114225;69458,7;5,52;4;3;3;4,5
+Dactylorhiza maculata;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);NA;semi-rosette ;119,77;54,205;1361;NA;220333,3333;11,36344661;3;3,5;4,5;3,5
+Danthonia decumbens;cs (competitors/stress-tolerators);SC (self-compatibel);0,1;semi-rosette ;338,635;14,61016854;378;1,4583;3175,2;1,116246106;3,5;3,5;3,5;2
+Daucus carota;cr (competitors/ruderals);SC (self-compatibel);0,393;semi-rosette ;232,045;12,84;NA;1,162881452;32745,22222;NA;5;4;3;4
+Deschampsia caespitosa;c (competitors);SI (self-incompatibel);0,4325;semi-rosette ;337,294;32,4951702;342,3339583;0,211112281;25240,64333;1,01494233;4;2,5;4;3,5
+Dianthus deltoides;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,22;leaves distributed regularly along the stem ;262;1,496052632;24;0,202672727;32219,14761;0,091603053;3,5;4;2;2
+Elymus repens;NA;NA;0,75;semi-rosette ;273,0475;85,63702268;2361,666667;2,37525;1536,06;8,649288738;4;3,5;3;3,5
+Epilobium palustre;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,275;leaves distributed regularly along the stem ;144,9133333;11,4892804;492,3333333;0,08145;9066;3,397432948;4;3;5;3
+Epilobium parviflorum;cs (competitors/stress-tolerators);SC (self-compatibel);0,433333333;leaves distributed regularly along the stem;160,3333333;24,9194993;779;0,079411111;NA;4,858627859;4;3,5;4,5;4
+Epilobium roseum;cs (competitors/stress-tolerators);SC (self-compatibel);0,4;semi-rosette ;150;13,54926731;654;0,09084;NA;4,36;4;3,5;4,5;4
+Epipactis helleborine;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);NA;leaves distributed regularly along the stem ;204,1733333;95,035;2582,833333;0,004;1385502,76;12,65019918;3,5;3,5;3;3,5
+Epipactis palustris;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,275;leaves distributed regularly along the stem ;184,665;49,67;1466;NA;27750;7,938699808;4;3,5;5;3,5
+Equisetum arvense;cr (competitors/ruderals);SC (self-compatibel);0,325;leaves distributed regularly along the stem;237,805;178,645;167;NA;NA;0,70225605;4,5;3,5;3,5;3,5
+Equisetum hyemale;cs (competitors/stress-tolerators);NA;0,95;leaves distributed regularly along the stem;154,2;456,415;1379,5;NA;NA;8,9461738;3;3,5;3,5;4
+Equisetum palustre;csr (competitors/stress-tolerators/ruderals);NA;0,3;leaves distributed regularly along the stem;201,8;14,55;NA;NA;NA;NA;3,5;3;4;3,5
+Equisetum pratense;csr (competitors/stress-tolerators/ruderals);NA;0,325;leaves distributed regularly along the stem;NA;NA;NA;NA;NA;NA;3;3,5;4;4
+Equisetum sylvaticum;cs (competitors/stress-tolerators);NA;0,325;leaves distributed regularly along the stem;236,76;12,185;302,17;NA;NA;1,27627133;3;3;4;3,5
+Euonymus europaea;c (competitors);NA;3,416666667;leaves distributed regularly along the stem ;243,5;NA;1181,5;52,1392;3,416666667;4,852156057;3;4;3,5;4
+Euphorbia cyparissias;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,175;leaves distributed regularly along the stem ;NA;NA;NA;1,9624;17345,26667;NA;5;4;2;3
+Festuca pratensis;c (competitors);SI (self-incompatibel);0,55;semi-rosette ;265,255;24,92950873;527,5;1,94775;125630,75;1,988652429;4;3,5;3;4
+Festuca rubra;c (competitors);SI (self-incompatibel);0,483333333;semi-rosette ;267;24,58139481;382;0,910514286;30068,25;1,43071161;4;3,5;3;3
+Filipendula ulmaria;c (competitors);SC (self-compatibel);0,791666667;semi-rosette ;391;470,5;10234,5;0,749785714;12084,30152;26,17519182;3;3;4,5;4
+Filipendula vulgaris;csr (competitors/stress-tolerators/ruderals);SI (self-incompatibel);0,325;semi-rosette ;295;141,8009479;3520;0,786672727;345,825;11,93220339;5;4,5;2,5;3
+Fragaria vesca;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,108333333;semi-rosette ;388;132,861162;2393,5;19,87672667;6643,451515;6,168814433;3,5;3;3;3
+Frangula alnus;c (competitors);SI (self-incompatibel);3,857142857;leaves distributed regularly along the stem ;256;78,8;964,55;125,9291429;226,5;3,767773438;4;3,5;4;3
+Galeopsis bifida;cr (competitors/ruderals);SC (self-compatibel);0,383333333;leaves distributed regularly along the stem ;NA;NA;NA;3,560161905;24136,29167;NA;5;3,5;3;3,5
+Galeopsis pubescens ;cr (competitors/ruderals);SC (self-compatibel);0,35;leaves distributed regularly along the stem ;170,87;8,34;NA;4,409;70277,77777;NA;4;3,5;3,5;4,5
+Galeopsis tetrahit ;cr (competitors/ruderals);SC (self-compatibel);0,35;leaves distributed regularly along the stem ;176;82,27985687;2390;4,347911111;4090,333333;13,57954545;4;3,5;3,5;3,5
+Galium aparine ;cr (competitors/ruderals);SC (self-compatibel);0,708333333;leaves distributed regularly along the stem ;140;5,695810579;161,3333333;9,445486667;2310,794872;1,152380952;4,5;3,5;3,5;4,5
+Galium boreale;csr (competitors/stress-tolerators/ruderals);NA;0,316666667;leaves distributed regularly along the stem ;209,97;2,395;49,005;0,709;103,7;0,233390484;4;4;3;3
+Galium mollugo;c (competitors);NA;0,5;leaves distributed regularly along the stem ;169,4566667;2,369590205;80,5;0,732290909;44524,91667;0,475047701;4;3,5;3;4
+Galium palustre;cs (competitors/stress-tolerators);SC (self-compatibel);0,435;leaves distributed regularly along the stem ;181,26;0,740870733;32,5;0,9095;299,575;0,179300452;4;3,5;4,5;3
+Galium uliginosum;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,266666667;leaves distributed regularly along the stem ;245,22;0,424065934;13;0,3986;11823,48519;0,05301362;4;3,5;4;3
+Galium verum;cs (competitors/stress-tolerators);NA;0,383333333;leaves distributed regularly along the stem ;228,1325;0,803690617;15,66666667;0,505970833;6201,7125;0,068673541;5;4;2;3
+Gentiana pneumonanthe;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,203333333;leaves distributed regularly along the stem ;233,44;8,4;121;0,05581;486,6666667;0,518334476;4;4;4;3
+Geranium palustre;c (competitors);SC (self-compatibel);0,575;semi-rosette ;209,39;223,44;4514,75;4,31;NA;21,56144037;4;3,5;5;4
+Geranium pratense;c (competitors);SC (self-compatibel);0,408333333;semi-rosette ;237,5;658,8;13898,5;8,36064;700,4583333;58,52;4;4;3;4
+Geum rivale;csr (competitors/stress-tolerators/ruderals);NA;0,316666667;semi-rosette ;237;288,0873672;6428;1,024766667;1368,257143;27,12236287;3;3;4;4
+Gladiolus imbricatus;csr (competitors/stress-tolerators/ruderals);SI (self-incompatibel);0,3;leaves distributed regularly along the stem ;NA;NA;NA;2,92;NA;NA;4;3,5;3,5;3,5
+Gymnadenia conopsea;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,3;semi-rosette ;144,5725;85,97645787;1537,5;0,006;542005;10,63480261;4;4;3,5;3
+Heracleum sphondylium;c (competitors);SC (self-compatibel);1,23125;leaves distributed regularly along the stem ;220;3950,459857;81950,66667;5,91216;20887,17857;372,5030303;4;3;4;4
+Holcus lanatus;c (competitors);SI (self-incompatibel);0,325;semi-rosette;230,1775;21,80360852;970,8333333;0,406916667;157198,44;4,217759483;4;3,5;4;3,5
+Hypericum maculatum;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,3985;leaves distributed regularly along the stem ;265;18,49981075;731;0,170071429;9842,52381;2,758490566;4;3;3,5;3,5
+Inula salicina;cs (competitors/stress-tolerators);NA;0,5;leaves distributed regularly along the stem ;236,915;32,77666667;700,5;0,193833333;NA;2,956756643;4;4,5;3;3
+Iris sibirica;cs (competitors/stress-tolerators);SC (self-compatibel);0,525;semi-rosette ;231,85;77,46;1208,75;13,90766667;NA;5,213500108;4;3,5;4;3
+Juncus articulatus;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,325;leaves distributed regularly along the stem ;202,9525;52,28921447;485,4375;0,020611111;1212964,75;2,39187741;5;4;4,5;3,5
+Juncus conglomeratus;c (competitors);SC (self-compatibel);0,72;semi-rosette ;284,18;490,1;2393;0,018123077;970042,7866;8,420719262;4;3,5;4,5;3
+Juncus effusus;c (competitors);SC (self-compatibel);0,9;semi-rosette ;267,85;575;3514,5;0,018607407;3512468,75;13,1211499;4;3,5;4,5;3,5
+Juncus inflexus;c (competitors);SC (self-compatibel);0,45;leaves distributed regularly along the stem ;322,41;688,765;2219,25;0,075383478;98;6,883316274;4;3,5;4,5;3,5
+Laserpitium prutenicum;c (competitors);SC (self-compatibel);0,355;semi-rosette ;225,14;481,01;5944,8;4,459;NA;26,40490362;4;4;4;3
+Lathyrus pratensis;c (competitors);SC (self-compatibel);0,566666667;leaves distributed regularly along the stem ;273,6666667;6,958663343;158,3333333;12,51950556;541,55;0,578562728;4;3,5;3,5;4
+Leontodon hispidus;csr (competitors/stress-tolerators/ruderals);SI (self-incompatibel);0,235;semi-rosette ;139,748;69,76107388;2280,666667;1,114266667;2285,4975;16,31985192;4;3;3,5;4
+Leucanthemum vulgare;c (competitors);SC (self-compatibel);0,364;semi-rosette ;129,6666667;27,12145302;669,6666667;0,383433333;2420,86875;5,164524422;4;3;3;4
+Linum catharticum;sr (stress-tolerators/ruderals);SC (self-compatibel);0,116666667;leaves distributed regularly along the stem ;210;0,855255809;26,61666667;0,153873684;277,5791667;0,126746032;4;3;3;3
+Listera ovata;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,14;semi-rosette;116,94;148,4290645;3720,666667;NA;337000;31,81688615;3,5;3,5;4,5;4
+Lotus corniculatus;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,429166667;leaves distributed regularly along the stem ;186;4,499233051;132;1,4034375;10047,66667;0,709677419;4;3;3,5;3,5
+Lotus uliginosus;csr (competitors/stress-tolerators/ruderals);SI (self-incompatibel);0,2625;leaves distributed regularly along the stem ;207,8133333;16,15180029;511;4,628666667;NA;2,458937508;4;3,5;4,5;3,5
+Luzula multiflora;cs (competitors/stress-tolerators);SC (self-compatibel);0,183333333;semi-rosette ;214;24,19486726;549;0,4007125;14490,90476;2,565420561;3,5;3;3;3
+Lychnis floscuculi;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,4125;semi-rosette ;140;36,35541635;919;0,1986;120766,4667;6,564285714;4;3,5;4;4
+Lysimachia nummularia;csr (competitors/stress-tolerators/ruderals);SI (self-incompatibel);0,45;leaves distributed regularly along the stem ;227,65;10,07904268;284,3333333;0,5;8156,666667;1,248993338;3;3,5;4;4
+Lysimachia thyrsiflora;cs (competitors/stress-tolerators);SI (self-incompatibel);0,416666667;leaves distributed regularly along the stem ;200,69;31,65;1613,75;NA;92,4;8,041008521;4;4;5;3
+Lysimachia vulgaris;cs (competitors/stress-tolerators);SI (self-incompatibel);0,896;leaves distributed regularly along the stem ;242,6233333;95,08408684;2539,25;0,3224;21172,9;10,4658112;4;3,5;4,5;3,5
+Lythrum salicaria;cs (competitors/stress-tolerators);SI (self-incompatibel);0,708333333;leaves distributed regularly along the stem ;179,845;51,07559052;1742,375;0,085928;85051,13093;9,688203731;4;3,5;4,5;4
+Medicago lupulina;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,25;leaves distributed regularly along the stem ;196;17,27838062;509,3333333;1,779927778;15274,34231;2,598639456;5;3,5;2,5;3,5
+Mentha arvensis;c (competitors);SC (self-compatibel);0,25;leaves distributed regularly along the stem ;174,7514286;14,21285714;604,2514286;0,181206667;19327,73077;3,45777676;5;3,5;3,5;3,5
+Molinia caerulea;cs (competitors/stress-tolerators);SI (self-incompatibel);0,7875;semi-rosette ;369,7166667;56,85673155;1286,625;0,714553846;34999,33334;3,480029753;4;4;4,5;2,5
+Myosotis palustris;csr (competitors/stress-tolerators/ruderals);SI (self-incompatibel);0,278333333;semi-rosette ;142,6375;17,64523822;1086,0625;0,3013;17106,83333;7,614144247;4;3,5;4,5;4
+Ononis arvensis;cs (competitors/stress-tolerators);SC (self-compatibel);0,5;leaves distributed regularly along the stem ;NA;NA;NA;4,935;NA;NA;5;4;3;3,5
+Orchis militaris ;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,2;semi-rosette ;111,96;292,82;6088;0,001;NA;54,37656306;5;4,5;3;3
+Padu serotina;c (competitors);SI (self-incompatibel);20,625;leaves distributed regularly along the stem ;308,2533333;159,106;3396,25;88,1;1;11,01772352;3,5;4;3;3
+Padus avium ;c (competitors);NA;8;leaves distributed regularly along the stem ;334,3175;183,1416667;3044,558;137,5;4000,5;9,106786214;3;3,5;4;4
+Parnassia palustris;csr (competitors/stress-tolerators/ruderals);NA;0,125;semi-rosette ;163,502;20,78059505;491,375;0,036076;1210;3,00531492;4;3;4,5;4
+Peucedanum palustre ;cs (competitors/stress-tolerators);SC (self-compatibel);0,8575;semi-rosette;212,9528571;587,3585714;9407,285714;2,861;102608,3333;44,17543789;3,5;3,5;5;3
+Phleum pratense;c (competitors);SC (self-compatibel);0,371;semi-rosette ;276,1428571;9,907277134;380;0,58775;4230,984615;1,376099327;4;3,5;2,5;3,5
+Pimpinella major;c (competitors);SC (self-compatibel);0,658333333;semi-rosette ;207;325,4509541;9334;2,072397576;23188,95238;45,09178744;4;3;3;4
+Pimpinella saxifraga;cs (competitors/stress-tolerators);SC (self-compatibel);0,413333333;semi-rosette ;285,5;189,6;2609,5;1,149225;13910,25;9,140105079;5;3,5;2;3
+Pinus sylvestris ;c (competitors);SC (self-compatibel);34,5;leaves distributed regularly along the stem ;299,1142857;10,81;65,94285714;7,572;11196,5;0,220460407;4,5;3,5;3;2
+Plantago lanceolata;csr (competitors/stress-tolerators/ruderals);I+ (± self-incompatibel);0,16125;semi-rosette ;166,90125;82,78745633;2567;1,616750877;10029,88611;15,38035215;4;4;3;3,5
+Plantago media;csr (competitors/stress-tolerators/ruderals);SI (self-incompatibel);0,171666667;semi-rosette;145,3333333;297,7349642;4827,666667;0,385075;1664,682857;33,21788991;4;3,5;2,5;3,5
+Poa pratensis;c (competitors);SC (self-compatibel);0,3;semi-rosette ;308,59;35,79994805;1025;0,272595238;68147;3,321559351;4;3,5;3;4
+Poa trivialis;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);NA;semi-rosette ;252,36;7,074666339;237,8333333;0,164933333;299,5;0,942436731;4;3,5;4;4
+Polygala comosa;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,15;leaves distributed regularly along the stem ;NA;NA;NA;1,42;34,76923077;NA;5;4,5;2,5;3
+Populus tremula;c (competitors);NA;19,5;leaves distributed regularly along the stem ;369,835;165,02125;2513,3125;0,1;NA;6,795767031;3;3,5;3;3
+Potentilla erecta;csr (competitors/stress-tolerators/ruderals);SI (self-incompatibel);0,166666667;leaves distributed regularly along the stem;303,9566667;5,734158679;148,5;0,4821375;3045,570175;0,488556483;4;3,5;3,5;2,5
+Potentilla reptans;csr (competitors/stress-tolerators/ruderals);NA;0,358333333;semi-rosette ;240,6475;53,72476489;2176,5;0,271025;26171,66667;9,0443491;5;3,5;3,5;3,5
+Prunella vulgaris;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,123333333;leaves distributed regularly along the stem;164,37;16,10835126;675,3333333;0,688757143;5229,477778;4,108616739;4;3,5;3,5;4
+Prunus spinosa;c (competitors);NA;1,952;leaves distributed regularly along the stem ;313,5;NA;472,25;448,2353556;1;1,506379585;4;4;2,5;4
+Pyrus pyraster;c (competitors);SI (self-incompatibel);20;leaves distributed regularly along the stem ;NA;NA;NA;28,6;NA;NA;4;3,5;2,5;4
+Quercus robur;c (competitors);SI (self-incompatibel);40;leaves distributed regularly along the stem ;280;NA;2073,533333;3487,466667;10040,9;7,40547619;4;3,5;3,5;3,5
+Ranunculus acris;c (competitors);SI (self-incompatibel);0,2575;leaves distributed regularly along the stem ;197,05;36,88801265;620,7051613;1,72743;1248,05;3,149988131;4;3,5;3,5;4
+Ranunculus auricomus;NA;NA;0,175;semi-rosette ;152,5;38,80333282;1276,5;2,320323077;795,5701754;8,370491803;4;3,5;4;4
+Ranunculus polyanthemos;cs (competitors/stress-tolerators);SI (self-incompatibel);NA;semi-rosette ;143,47;196,46;4438;2,495;104;30,93329616;4;4;3;3
+Ranunculus repens;csr (competitors/stress-tolerators/ruderals);SI (self-incompatibel);0,241666667;semi-rosette ;181,104;193,94;3593,555556;2,24169697;607,6166667;19,84249688;4,5;3;3,5;4
+Rubus caesius;c (competitors);SC (self-compatibel);0,475;leaves distributed regularly along the stem ;386,6666667;553,5809809;9655,333333;3,7628451;206;24,97068966;4,5;4,5;3;3
+Rumex acetosa;c (competitors);NA;0,505;leaves distributed regularly along the stem ;102,11;128,532105;2014,9275;0,944641667;413,6941176;19,73291059;4;3,5;3,5;4
+Salix cinerea;c (competitors);NA;2,75;leaves distributed regularly along the stem ;438,765;152,705;662,875;0,067;8674458,75;1,51077456;4;3,5;4,5;3,5
+Salix myrsinifolia;c (competitors);NA;1,916666667;leaves distributed regularly along the stem ;NA;NA;0;NA;1071;NA;4;3,5;5;3
+Salix repens ;c (competitors);NA;1,05;leaves distributed regularly along the stem ;388,0575;18,87684525;106,55;0,044;NA;0,274572712;4;4;4,5;3
+Salix rosmarinifolia;cs (competitors/stress-tolerators);NA;NA;leaves distributed regularly along the stem ;NA;NA;NA;NA;NA;NA;4;3,5;4,5;3
+Sanguisorba officinalis;cs (competitors/stress-tolerators);NA;0,475;semi-rosette ;271,6666667;105,2219543;2372,666667;2,352820988;8219,272727;8,733742331;4;4;4;4
+Scirpus sylvaticus;cs (competitors/stress-tolerators);SC (self-compatibel);0,775;semi-rosette;215,51;301,4202531;6962,625;0,124723077;142978,05;32,30766554;4;3,5;4,5;4
+Scorzonera humilis;csr (competitors/stress-tolerators/ruderals);NA;0,25;semi-rosette ;168,1;145,554;2974,833333;3,7106;2946,666667;17,69680746;3;4;2,5;2,5
+Scrophularia nodosa;cs (competitors/stress-tolerators);SC (self-compatibel);0,583333333;leaves distributed regularly along the stem ;182;313,5979769;8166;0,0952;43427,89286;44,86813187;3;3,5;3;4
+Scrophularia umbrosa;cs (competitors/stress-tolerators);NA;0,641666667;leaves distributed regularly along the stem ;148,535;123,565;3792,72;0,084966667;NA;25,53418386;4;4;4,5;4
+Scutellaria galericulata;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,241666667;leaves distributed regularly along the stem ;211,0433333;16,10609335;640,4166667;0,689433333;9077,333335;3,034526874;4;3,5;5;3,5
+Selinum carvifolia;cs (competitors/stress-tolerators);SC (self-compatibel);0,483333333;semi-rosette ;226,965;346,5925;6043,335;1,502977778;19066,30208;26,62672659;4;4;3,5;3
+Serratula tinctoria;c (competitors);NA;0,5;semi-rosette ;190,6933333;165,0552904;4699,35;2,72874;NA;24,64349392;4;3,5;3,5;3
+Silaum silaus;c (competitors);SC (self-compatibel);0,483333333;leaves distributed regularly along the stem ;287,3333333;318,2785388;5888;1,749375;186016,6667;20,49187935;4;4;4;3
+Solidago canadensis;c (competitors);SI (self-incompatibel);1,375;leaves distributed regularly along the stem ;221;29,17434653;929;0,0668125;8499,428571;4,20361991;4,5;4;3,5;4
+Sonchus palustris;cs (competitors/stress-tolerators);NA;1,9;semi-rosette ;180,9;174,71;5066,5;0,5832;6353,277778;28,00718629;5;4;4,5;3
+Stellaria graminea;cs (competitors/stress-tolerators);SC (self-compatibel);0,308333333;leaves distributed regularly along the stem ;170,53;2,83787894;76,33333333;0,335673333;4236,575758;0,447624074;4;3;3;4
+Succisa pratensis;cs (competitors/stress-tolerators);SC (self-compatibel);0,341666667;leaves distributed regularly along the stem ;177,5;277,2910969;4860,666667;1,369430303;541;27,38403756;4;3,5;4;3
+Swertia perennis;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,26;semi-rosette ;NA;NA;NA;0,361;NA;NA;4;3,5;5;4
+Taraxacum officinale;NA;NA;NA;semi-rosette ;NA;NA;NA;0,5316;NA;NA;4;2,5;3;4
+Thalictrum flavum;c (competitors);NA;0,6;leaves distributed regularly along the stem ;246;1133,827826;32542,5;1,40413;46169,3;132,2865854;4;3,5;4,5;3
+Thalictrum lucidum;cs (competitors/stress-tolerators);NA;0,675;semi-rosette ;NA;NA;NA;0,767;38092,33333;NA;4;3,5;4,5;3,5
+Thymus serpyllum;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,075;leaves distributed regularly along the stem ;251;0,61;10,44;0,1968;55,5;0,041593625;4;4;2;1,5
+Trifolium dubium;r (ruderals);SC (self-compatibel);0,225;semi-rosette ;199,5;4,165833614;135,5;0,467240217;7554,607143;0,679197995;4;3,5;3;4
+Trifolium medium;c (competitors);SI (self-incompatibel);0,4;leaves distributed regularly along the stem ;263;65,74024296;1437;2,1266;3785,994445;5,463878327;4;3,5;2,5;3
+Trifolium montanum;csr (competitors/stress-tolerators/ruderals);NA;0,275;semi-rosette ;260,045;96,57;1607,5;0,990214286;27,40909091;6,181622412;4;4;2,5;3
+Trifolium pratense;c (competitors);SI (self-incompatibel);0,283333333;semi-rosette;223,3975;32,58394007;715,5;1,580555556;208,9583333;3,202811133;4;3;3;4
+Trifolium repens;csr (competitors/stress-tolerators/ruderals);SI (self-incompatibel);0,35;semi-rosette;185,6875;11,75808095;682;0,590026667;16628,17143;3,672837428;4;3;3,5;4
+Trollius europaeus;c (competitors);SI (self-incompatibel);0,275;semi-rosette ;193;290,0791345;5348,333333;0,891823077;231,1666667;27,71157168;4;3,5;4;4
+Urtica dioica ;c (competitors);SC (self-compatibel);0,875;leaves distributed regularly along the stem ;212,5;101,2212909;3841,5;0,179769231;9003,975;18,07764706;3,5;3;3,5;4,5
+Valeriana dioica;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,18;semi-rosette;168,6666667;27,27137687;799;0,79918;1088,333333;4,73715415;4;3,5;5;3
+Valeriana officinalis;c (competitors);SC (self-compatibel);0,525;semi-rosette;140;408,039946;12333;0,942;590,8;88,09285714;3,5;3,5;3,5;4
+Valeriana simplicifolia;NA;NA;NA;semi-rosette;NA;NA;NA;NA;NA;NA;4;3,5;5;3
+Veratrum lobelianum;NA;NA;NA;semi-rosette;NA;NA;NA;NA;NA;NA;4;3;3,5;3,5
+Veronica chamaedrys;csr (competitors/stress-tolerators/ruderals);NA;0,25;leaves distributed regularly along the stem ;270,46;15,80847992;355,5;0,206428571;12629,675;1,314427272;4;3;3;4
+Veronica scutellata;cs (competitors/stress-tolerators);NA;0,166666667;leaves distributed regularly along the stem ;215,875;2,965;74,625;0,473757143;200023,4667;0,345686161;4;3,5;4,5;4
+Vicia cracca;c (competitors);SC (self-compatibel);0,883333333;leaves distributed regularly along the stem ;223,055;29,26000096;971,5;16,08323636;1693,683333;4,355428033;4;3,5;3;4
+Viola canina;csr (competitors/stress-tolerators/ruderals);SC (self-compatibel);0,1;leaves distributed regularly along the stem ;245;12,71737374;238;1,08548;10508,01667;0,971428571;4;3,5;3,5;2,5
+Viola palustris;s (stress-tolerators);SC (self-compatibel);0,085;semi-rosette;171,1266667;44,73060711;1812,916667;0,685666667;2179,342425;10,59400444;4;3;4,5;3
