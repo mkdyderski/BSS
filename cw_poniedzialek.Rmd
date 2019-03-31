@@ -8,7 +8,7 @@ output: pdf_document
 
 1. Załóżmy, że dysponujemy próbkami masy ciała, koloru sierści oraz struktury płci z populacji ryjówki aksamitnej. Dane reprezentujące próbę można wpisać w skrypt w następujący sposób: 
 ```{r, eval=F}
-r shrews.mass<-c(26,29,41,24,28,56,74,35,68,95,45,
+shrews.mass<-c(26,29,41,24,28,56,74,35,68,95,45,
 67,89,35,67,88,75,34)
 
 fur.color<-c('gray','gray','gray','gray','brown','brown',
