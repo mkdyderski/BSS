@@ -28,6 +28,7 @@ c)	Korzystając z funkcji `sd()` obliczyć odchylenie standardowe
 d)	Dane masy ciała ryjówek zapisać jako ciąg liczb (funkcja `as.integer()`), kolor sierści jako ciąg znaków (funkcja `as.character()`), a strukturę płci jako wartość logiczną (funkcja `as.logical()`)
 e)	Z trzech wektorów stworzonych w podpunkcie (d) stworzyć listę (funkcja `list()`). Każdemu poziomowi listy nadać nazwę (funkcja `names()`)
 f)	Listę przekształcić w ramkę danych (funkcja `as.data.frame()`)
+g) Korzystając z funkcji `summary()` wyświetlić podsumowanie ramki danych - co daje nam ta funkcja?
 
 2. W plikach `molinion1.csv` oraz `molinion2.csv` zawarto dane procentowego pokrycia gatunków roślin naczyniowych na n powierzchniach badawczych zlokalizowanych na łąkach zmiennowilgotnych w okolicach Dąbrowy Górniczej.
 Linki: [https://github.com/mkdyderski/BSS/blob/BSS2019/datasety/molinion1.csv] oraz [https://github.com/mkdyderski/BSS/blob/BSS2019/datasety/molinion2.csv]. Możesz również ściągnąć go do R za pomocą funkcji `read.csv()`:
@@ -38,30 +39,33 @@ moli2<-read.csv('https://raw.githubusercontent.com/mkdyderski/BSS/BSS2019/datase
                sep=';')
 ```
 a)	Oba pliki wczytać do R
-b)	Sprawdzić, czy dane zostały wczytane poprawnie (funkcja `head()`, `str()`, `dim()` oraz `length()`)
+b)	Sprawdzić, czy dane zostały wczytane poprawnie (funkcja `head()`, `str()`, `dim()` oraz `length()`). Na każdym etapie sprawdzaj obiekty w oknie środowiska (podgląd tabeli).
 c)	Dokonać transpozycji obu ramek danych (funkcja `t()`)
 d)	Korzystając z biblioteki `reshape2` obie ramki danych przekształcić do wąskich tabelek (funkcja `melt()`)
 e)	Obie wąskie tabelki skleić wierszami w jeden obiekt (funkcja `rbind()`)
 f)	Zmienić nazwy kolumn. Kolumna pierwsza reprezentuje id powierzchni, druga gatunek, a trzecia procentowe pokrycie gatunku
-g)	Korzystając z biblioteki `reshape2` tabelkę wąską przekształcić w szeroką (funkcja `d.cast()`). W kolumnach powinny być nawy powierzchni, a w wierszach nazwy gatunków. Dlaczego dla niektórych wierszy (gatunków) wyprodukowane zostały wartości `NA`?
-h)	Szeroką tabelkę wyeksportować z R do pliku .csv (funkcja `write.table()`). Wartości NA przekształcić w zera (wtedy powiemy R, że te dane nie są brakujące, ale że w danej próbie dany gatunek osiągnął zerowe pokrycie, czyli w jednej próbie go mogło nie być, a np. w 25 innych próbach notowany był z dużym pokryciem). Pierwszy wiersz przesunąć o jedną kolumnę w prawo. Kolumna A pozostanie wtedy pusta. Należy ją usunąć
+g)	Korzystając z biblioteki `reshape2` tabelkę wąską przekształcić w szeroką (funkcja `dcast()`). W kolumnach powinny być nazwy powierzchni, a w wierszach nazwy gatunków. Dlaczego dla niektórych wierszy (gatunków) wyprodukowane zostały wartości `NA`?
+h)	Szeroką tabelkę wyeksportować z R do pliku .csv (funkcja `write.table()`) i otworzyć w Excelu. Wartości NA przekształcić w zera (wtedy powiemy R, że te dane nie są brakujące, ale że w danej próbie dany gatunek osiągnął zerowe pokrycie, czyli w jednej próbie go mogło nie być, a np. w 25 innych próbach notowany był z dużym pokryciem). Pierwszy wiersz przesunąć o jedną kolumnę w prawo. Kolumna A pozostanie wtedy pusta. Należy ją usunąć.
 i)	Szeroką tabelkę załadować ponownie do R
 j)	Przekształcić tabelkę szeroką w wąską
-k)	Po załadowaniu do R pliku `cechy.all.csv` do tabelki wąskiej z podpunktu i) dokleić kolumny zawierające wysokość pędów (`canopy_height`) masę liści (`leaf_mass`), rozmiar liści (`leaf_size`) i masę nasion (`seed_mass`). W tym celu należy wykorzystać funkcję `left_join()`. Przed zaimplementowaniem funkcji `left_join()` należy z wczytanej tabeli stworzyć obiekt, zawierający kolumnę z gatunkiem oraz czterema wyżej wymienionymi cechami i nazwać go np. `nasiona.liscie`. link: [https://github.com/mkdyderski/BSS/blob/BSS2019/datasety/cechy.all.csv]. Możesz również ściągnąć go do R za pomocą funkcji `read.csv()`:
+k)	Po załadowaniu do R pliku `cechy.all.csv`, link: [https://github.com/mkdyderski/BSS/blob/BSS2019/datasety/cechy.all.csv]. Możesz również ściągnąć go do R za pomocą funkcji `read.csv()`:
 ```{r, eval=FALSE}
 cechy.all<-read.csv('https://raw.githubusercontent.com/mkdyderski/BSS/BSS2019/datasety/cechy.all.csv',
                  sep=';')
 ```
-l)	Korzystając z pakietu `dplyr` dla każdego gatunku z obiektu `nasiona.liscie` obliczyć stosunek powierzchni liści (`leaf_size`) do masy liści (`leaf_mass`) oraz stosunek powierzchni liści (`leaf_mass`) do wysokości pędów (`canopy_heigh`t). Dlaczego dla niektórych gatunków wyprodukowane zostały wartości `NA`?
+l) Stwórz obiekt `nasiona.liscie`, zawierającą gatunek (kolumna `species`), wysokość pędów (`canopy_height`) masę liści (`leaf_mass`), rozmiar liści (`leaf_size`) i masę nasion (`seed_mass`). Wykorzystaj mechanizm indeksowania - podaj numery odpowiednich kolumn w nawiasie kwadratowych. Numery kolumn sprawdź za pomocą funkcji `colnames(cechy.all)`
+```{r, eval=F}
+nowa.tabela<-cechy.all[,c(1,3,23,45)]#numery trzeba sprawdzić
+```
+m) Złącz tabelę wąską z nazwami gatunków z tabelą `nasiona.liscie` W tym celu należy wykorzystać funkcję `left_join()` z pakietu `dplyr`. 
 
-3.  Plik `meteo.csv` (rozdzielony przecinkami – ponieważ R nie czyta przecinków jako znaków decymalnych, trzeba to zdefiniować przy wczytywaniu danych argumentem `dec=’,’`) zawiera pomiary dobowej temperatury powietrza na Kasprowym Wierchu w latach 1950-2015. link: [https://github.com/mkdyderski/BSS/blob/BSS2019/datasety/lichenes1.csv]. Możesz również ściągnąć go do R za pomocą funkcji `meteo.csv`:
+3.  Plik `meteo.csv` zawiera pomiary dobowej temperatury powietrza na Kasprowym Wierchu w latach 1950-2015. link: [https://github.com/mkdyderski/BSS/blob/BSS2019/datasety/lichenes1.csv]. Możesz również ściągnąć go do R za pomocą funkcji `meteo.csv`:
 ```{r, eval=FALSE}
 meteo<-read.csv('https://raw.githubusercontent.com/mkdyderski/BSS/BSS2019/datasety/meteo.csv',
                  sep=';')
 ```
 
 Po zaimportowaniu danych do R, przy użyciu pakietu `dplyr` obliczyć liczbę dni ze średnią dobową temperaturą powietrza mniejszą niż 10 stopni Celsjusza w każdym roku monitoringu temperatury oraz obliczyć średnią roczną temperaturę powietrza biorąc pod uwagę tylko temperatury dobowe niższe niż 10 stopni.
-
 
 
 ##Propozycje do pracy z własnym zbiorem danych
