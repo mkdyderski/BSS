@@ -1,26 +1,29 @@
 ---
-title: "Dzień 3 - Testy statystyczne i regresja - zadania"
+title: "Dzień 4 - Modele nieliniowe, mieszane, GAM, GLM + miary niepodobieństwa - zadania"
 author: "Marcin K. Dyderski, Patryk Czortek"
-date: "3 kwietnia 2019"
+date: "4 kwietnia 2019"
 output: pdf_document
 ---
 ## Zadania do wykonania
 1. Wczytaj zbiór danych z cechami sosen link: [https://github.com/mkdyderski/BSS/blob/BSS2019/datasety/sosny.csv]. Możesz również ściągnąć go do R za pomocą funkcji `read.csv()`:
 ```{r, eval=FALSE}
-sosny<-read.csv('https://raw.githubusercontent.com/mkdyderski/BSS/BSS2019/datasety/sosny.csv',
+sosny<-read.csv('https://raw.githubusercontent.com/mkdyderski/BSS/BSS2019/datasety/sosna.csv',
                 sep=';')
 ```
-Używając funkcji `nls()` stwórz model nieliniowy biomasy części nadziemnej  `AB` jako funkcji `Hg` używając formuł przedstawionych na wykładzie. Wykonaj wykres używając pakietu `ggplot` i dodając linię modelu za pomocą `geom_smooth(method='nls'....)`, pamiętaj o `SE=FALSE`.
-2. Wczytaj zbiór danych dotyczący występowania gatunków wskaźnikowych starych lasów w Poznaniu. Pochodzi on z publikacji Dyderski et al. 2017. Urban For Urban Greening [https://www.sciencedirect.com/science/article/pii/S161886671730078X?via%3Dihub]. link: [https://github.com/mkdyderski/BSS/blob/BSS2019/datasety/afis.csv]. Możesz również ściągnąć go do R za pomocą funkcji `read.csv()`:
+Używając funkcji `nls()` stwórz model nieliniowy biomasy części nadziemnej  `AB` o postaci `y=a*x^b` jako funkcji `Hg` używając formuł przedstawionych na wykładzie. Wykonaj wykres używając pakietu `ggplot` i dodając linię modelu za pomocą `geom_smooth(method='nls'....)`, pamiętaj o `SE=FALSE`.
+
+2. Wczytaj zbiór danych dotyczący występowania gatunków wskaźnikowych starych lasów w Poznaniu. Możesz również ściągnąć go do R za pomocą funkcji `read.csv()`:
 ```{r, eval=FALSE}
 afis<-read.csv('https://raw.githubusercontent.com/mkdyderski/BSS/BSS2019/datasety/afis.csv',
                sep=';')
 ```
-W zbiorze danych mamy informacje o udziale procentowym terenów otwartych (agricultural, semi-natural & wetlans, kolumna `ASW`), lasów (`Forests`), terenów przemysłowych (`Industrial`), wód ('`Water`), zabudowy gęstej (`Urban.dense`) i rzadkiej (`Urban.sparse`), typ lasów w kwadracie (`OLDFOR`,stare, nowe i brak lasów), liczbę gatunków wskaźnikowych starych lasów (`AFIS`) oraz obecność (0/1) pięciu wybranych gatunków.
-a. Używając zbioru danych `afis` wykonaj model dla liczby gatunków wskaźnikowych starych lasów (`AFIS`) jako funkcji `Water`, `Urban.dense` oraz `OLDFOR`. Z uwagi na charakter danych skorzystaj z rozkładu Poisson używając funkcji `glm(...., family=poisson)` 
-b. Wykonaj analogiczny model używając zamiast `OLDFOR` kolumny forest. Sprawdź który z modeli jest lepszy używając funkcji `AIC()`
+W zbiorze danych mamy informacje o udziale procentowym terenów otwartych (agricultural, semi-natural & wetlans, kolumna `ASW`), lasów (`Forests`), terenów przemysłowych (`Industrial`), wód ('`Water`), zabudowy gęstej (`Urban.dense`) i rzadkiej (`Urban.sparse`), typ lasów w kwadracie (`OLDFR`,stare, nowe i brak lasów), liczbę gatunków wskaźnikowych starych lasów (`AFIS`) oraz obecność (0/1) pięciu wybranych gatunków.
+
+a. Używając zbioru danych `afis` wykonaj model dla liczby gatunków wskaźnikowych starych lasów (kolumna `AFIS`) w opraciu o trzy predyktory: `Water`, `Urban.dense` oraz `OLDFR`. Z uwagi na charakter danych skorzystaj z rozkładu Poisson używając funkcji `glm(...., family=poisson)` 
+
+b. Wykonaj analogiczny model używając zamiast `OLDFR` kolumny `Forests`. Sprawdź który z modeli jest lepszy używając funkcji `AIC()`
+
 c. Przygotuj wykres na którym pokażesz zależność pomiędzy AFIS a `Forests` z linią regresji zakładającą rozkład Poissona w oparciu o `geom_smooth(method='glm',method.args=list(family='poisson'))`.
-*d. Sprawdź jak zmieni się jakość dopasowania modelu (wykresy diagnostyczne) po zastosowaniu modelu typu zero-inflated (zadanie dla chętnych)
 
 3. Korzystając ze zbioru danych `afis` przygotuj model występowania wybranego gatunku (np. `Ficavern`) używając jako predyktorów wybranych cech. Pamiętaj że występowanie gatunków w tym zbiorze danych jest wyrażone zerojedynkowo - użyj `glm(...., family = binomial(link='logit'))`
 4. Wczytaj zbiór danych `hotspots` link: [https://github.com/mkdyderski/BSS/blob/BSS2019/datasety/hotspots.csv]. Możesz również ściągnąć go do R za pomocą funkcji `read.csv()`:
@@ -28,14 +31,14 @@ c. Przygotuj wykres na którym pokażesz zależność pomiędzy AFIS a `Forests`
 hotspots<-read.csv('https://raw.githubusercontent.com/mkdyderski/BSS/BSS2019/datasety/hotspots.csv',
                    sep=';')
 ```
-Stwórz model liniowy bogactwa gatunkowego ptaków z efektami losowymi (`continent`) oraz stałymi (wybierz interesujące Cię;) i za pomocą funkcji `r.squaredGLMM()` z pakietu `MuMIn` sprawdź R2c i R2m.
+Stwórz model mieszany (funkcja `lmer` z pakietu `lmerTest`) bogactwa gatunkowego ptaków (kolumna `birds`) z efektami losowymi (`continent`) oraz stałymi (wybierz interesujące Cię kolumny;) i za pomocą funkcji `r.squaredGLMM()` z pakietu `MuMIn` sprawdź R2c i R2m.
+
 5. Wczytaj zbiór danych `survi` link: [https://github.com/mkdyderski/BSS/blob/BSS2019/datasety/survi.csv]. Możesz również ściągnąć go do R za pomocą funkcji `read.csv()`:
 ```{r, eval=FALSE}
 survi<-read.csv('https://raw.githubusercontent.com/mkdyderski/BSS/BSS2019/datasety/survi.csv',
                 sep=';')
 ```
-W zbiorze tym sprawdź wpływ pH na przeżywalność siewek. Stwórz GLMM z rozkładem dwumianowym używając `family=binomial(link='logit')` - jako efekt losowy sprawdź rok oraz blok - pomiń efekty związane z plotem.
-
+W zbiorze tym sprawdź wpływ pH na przeżywalność siewek (kolumna `surv`). Stwórz GLMM (funkcja `glmer` z pakietu `lmerTest`) z rozkładem dwumianowym używając `family=binomial(link='logit')` - jako efekt losowy sprawdź rok oraz blok - pomiń efekty związane z plotem.
 
 6. Badano skład gatunkowy gatunków roślin runa na powierzchniach z: (i) usuniętym martwym świerkiem (litera „c” przy id powierzchni), (ii) nieusuniętym martwym świerkiem zabitym przez kornika drukarza (litera „d” przy id powierzchni) oraz (iii) drzewostanem nietkniętym przez gradację kornika (litera „f” przy id powierzchni). Dane zawarto w pliku `dend.csv`. link: [https://github.com/mkdyderski/BSS/blob/BSS2019/datasety/dend.csv]. Możesz również ściągnąć go do R za pomocą funkcji `read.csv()`:
 ```{r, eval=FALSE}
