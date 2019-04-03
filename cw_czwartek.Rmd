@@ -59,7 +59,7 @@ g)	Dla każdego typu powierzchni obliczyć średni wskaźnik różnorodności Sh
 
 ```{r, eval=F}
 id<-c(rep("clearcut", 30), rep("dead", 19), rep("forest", 25), rep("dead", 2),
-      "forest", rep("dead", 3), rep("forest", 4), rep("dead", 4), "forest")`
+      "forest", rep("dead", 3), rep("forest", 4), rep("dead", 4), "forest")
 ```
 
 należy skleić kolumnami z obiektem zawierającym wskaźniki Shannona-Wienera policzone dla każdej powierzchni w następujący sposób:
@@ -77,8 +77,6 @@ albo korzystając z pakietu `dplyr`:
 library(dplyr)
 szanon%>%group_by(id)%>%summarise(m=mean(Shannon.index))
 ```
-
-h)	Używając tej samej procedury jak w podpunkcie (g), dla każdego typu powierzchni obliczyć średni wskaźnik równocenności Pielou. O czym mówi wskaźnik i czy są różnice pomiędzy trzema siedliskami?
 
 
 ##Propozycje do pracy z własnym zbiorem danych
