@@ -16,8 +16,8 @@ Zawiera on dane wykorzystane w pracy Dyderski i Jagodzinski 2015 https://www.for
 2. Sprawdź korelację L z a, richness z shannon oraz prunusc z M
 3. Wykonaj macierz korelacji dla wszystkich zmiennych liczbowych w tym datasecie i zwizualizują ją za pomocą pakietu `corrplot`. 
 4. Przygotuj model liniowy prunusb jako funkcji N i wykonaj wykresy diagnostyczne.Jaki jest współczynnik determinacji (R^2)? czy model jest istotny statystycznie? 
-5. Przygotuj model liniowy prunusc w oparciu o kilka zmiennych - wybierz najlepszą w oparciu o AIC. Możesz zrobić to ręcznie przy użyciu `AIC()` lub półautomatycznie używając `step()` lub `MuMIn::dredge()`, jednak wtedy zastanów się które parametry jest sens potraktować jako potencjalne predyktory. 
-6. Za pomocą jednoczynnikowej analizy wariancji sprawdź czy są różnice w L pomiędzy typami roślinności. Jeśli są, za pomocą testu Tukeya sprawdź pomiędzy którymi. 
+5. Przygotuj model liniowy prunusc w oparciu o kilka zmiennych - wybierz najlepszy model w oparciu o AIC. Możesz zrobić to ręcznie przy użyciu `AIC()` lub półautomatycznie używając `step()` lub `MuMIn::dredge()`, jednak wtedy zastanów się które parametry jest sens potraktować jako potencjalne predyktory. 
+6. Przygotuj wizualizację modelu z punktu 5. przy użyciu pakietu `ggpredict`. 
 
 7. Wczytaj zbiór danych `hotspots` link: [https://github.com/mkdyderski/BSS/blob/BSS2019/datasety/hotspots.csv]. Możesz również ściągnąć go do R za pomocą funkcji `read.csv()`:
 ```{r, eval=FALSE}
