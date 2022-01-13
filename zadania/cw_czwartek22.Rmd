@@ -1,5 +1,5 @@
 ---
-title: "Dzień 4 - Modele nieliniowe, mieszane, GAM, GLM  - zadania"
+title: "Dzień 4 - Modele: GLM, GAM - zadania"
 author: "Marcin K. Dyderski, Patryk Czortek"
 date: "13 stycznia 2022"
 output: pdf_document
@@ -12,36 +12,32 @@ afis<-read.csv('https://raw.githubusercontent.com/mkdyderski/BSS/BSS2019/dataset
 ```
 W zbiorze danych mamy informacje o udziale procentowym terenów otwartych (agricultural, semi-natural & wetlans, kolumna `ASW`), lasów (`Forests`), terenów przemysłowych (`Industrial`), wód ('`Water`), zabudowy gęstej (`Urban.dense`) i rzadkiej (`Urban.sparse`), typ lasów w kwadracie (`OLDFR`,stare, nowe i brak lasów), liczbę gatunków wskaźnikowych starych lasów (`AFIS`) oraz obecność (0/1) pięciu wybranych gatunków.
 
-a. Używając zbioru danych `afis` wykonaj model dla liczby gatunków wskaźnikowych starych lasów (kolumna `AFIS`) w opraciu o trzy predyktory: `Water`, `Urban.dense` oraz `OLDFR`. Z uwagi na charakter danych skorzystaj z rozkładu Poisson używając funkcji `glm(...., family=poisson)` 
+a. Używając zbioru danych `afis` wykonaj model dla liczby gatunków wskaźnikowych starych lasów (kolumna `AFIS`) w opraciu o trzy predyktory: `Water`, `Urban.dense` oraz `OLDFR`. Z uwagi na charakter danych skorzystaj z rozkładu Poissona używając funkcji `glm(...., family=poisson)` 
 
-b. Wykonaj analogiczny model używając zamiast `OLDFR` kolumny `Forests`. Potraktuj te dane odpowiednim rozkładem (Beta - proporcja udziału lasów), pamiętaj o zamianie na wartości z zakresu 0-1. Sprawdź który z modeli jest lepszy używając funkcji `AIC()`
-
-c. Przygotuj wykres na którym pokażesz zależność pomiędzy AFIS a `Forests` z linią regresji zakładającą rozkład Poissona w oparciu o `geom_smooth(method='glm',method.args=list(family='poisson'))`.
-
-2. Korzystając ze zbioru danych `afis` przygotuj model występowania wybranego gatunku (np. `Ficavern`) używając jako predyktorów wybranych cech. Pamiętaj że występowanie gatunków w tym zbiorze danych jest wyrażone zerojedynkowo - użyj `glm(...., family = binomial(link='logit'))`
+2. Wykonaj  model proporcji lasów w kwadracie (kolumna `Forests`) w zależności od wybranych predyktorów. Potraktuj te dane odpowiednim rozkładem (zero-inflated Beta - proporcja udziału lasów, wykorzystaj pakiet `glmmTMB`), pamiętaj o zamianie na wartości z zakresu 0-1 (podziel przez 100). Sprawdź który z modeli jest lepszy używając funkcji `AIC()`
 
 
-3. Wczytaj zbiór danych `survi` link: [https://github.com/mkdyderski/BSS/blob/BSS2019/datasety/survi.csv]. Możesz również ściągnąć go do R za pomocą funkcji `read.csv()`:
+
+3. Korzystając ze zbioru danych `afis` przygotuj model występowania wybranego gatunku (np. `Ficavern`) używając jako predyktorów wybranych cech. Pamiętaj że występowanie gatunków w tym zbiorze danych jest wyrażone zerojedynkowo - użyj `glm(...., family = binomial(link='logit'))`
+
+
+4. Wczytaj zbiór danych `survi` link: [https://github.com/mkdyderski/BSS/blob/BSS2019/datasety/survi.csv]. Możesz również ściągnąć go do R za pomocą funkcji `read.csv()`:
 ```{r, eval=FALSE}
 survi<-read.csv('https://raw.githubusercontent.com/mkdyderski/BSS/BSS2019/datasety/survi.csv',
                 sep=';')
 ```
-W zbiorze tym sprawdź wpływ pH na przeżywalność siewek (kolumna `surv`). Stwórz GLMM (funkcja `glmer` z pakietu `lmerTest`) z rozkładem dwumianowym używając `family=binomial(link='logit')` - jako efekt losowy sprawdź rok oraz blok - pomiń efekty związane z plotem.
+W tym zbiorze sprawdź wpływ pH na przeżywalność siewek (kolumna `surv`). Stwórz GLMM (funkcja `glmer` z pakietu `lmerTest` lub `glmmTMB` z pakietu `glmmTMB`) z rozkładem dwumianowym używając `family=binomial(link='logit')` - jako efekt losowy sprawdź rok oraz blok - pomiń efekty związane z plotem.
 
-4. Wczytaj  zbiór danych `regen.plots` link: [https://github.com/mkdyderski/BSS/blob/BSS2019/datasety/regen.plots.csv]. Możesz również ściągnąć go do R za pomocą funkcji `read.csv()`:
+5. Wczytaj  zbiór danych `regen.plots` link: [https://raw.githubusercontent.com/mkdyderski/BSS/BSS2019/datasety/regen.plots.csv]. Możesz również ściągnąć go do R za pomocą funkcji `read.csv()`:
 ```{r, eval=FALSE}
-survi<-read.csv('https://raw.githubusercontent.com/mkdyderski/BSS/BSS2019/datasety/regen.plots.csv',
+regen<-read.csv('https://raw.githubusercontent.com/mkdyderski/BSS/BSS2019/datasety/regen.plots.csv',
                 sep=';')
 ```
 zawiera on liczbę jaworów (Acer), buków (Fagus) i jesionów (Fraxinus) na 100 m2 na 32 poletkach oraz trzy zmienne: DIFN (miarę dostępności światła), ph gleby i cyfrowy zapis kompozycji gatunkowej d-stanu: wartości ujemne - świerkowe, blisko zera - bukowe, dodatnie - jaworzyny i łegi. riv to kod doliny rzecznej - potraktuj go jako random intercept
 
-a. przygotuj model liczebności jawora używając funkcji `glmmTMB()` z pakietu `glmmTMB`. Sprawdź za pomocą funkcji `testDispersion(simulateResiduals(model))` i `testZeroInflation(simulateResiduals(model))` dyspersję i zera. Po zbudowaniu modelu globalnego zredukuj go używając funkcji `dredge`. Jaki model jest ostateczny?
+a. przygotuj model liczebności jawora używając funkcji `glmmTMB()` z pakietu `glmmTMB`. Sprawdź za pomocą funkcji `testDispersion(simulateResiduals(model))` i `testZeroInflation(simulateResiduals(model))` dyspersję i zera (pakiet `DHARMa`. Po zbudowaniu modelu globalnego zredukuj go używając funkcji `dredge`. Jaki model jest ostateczny?
 
 b. przygotuj model dla buka - czy można zastosować rozkład Poissona, czy ujemny dwumianowy? sprawdź wielkość efektów używając funkcji `ggpredict` z pakietu `ggeffects`
-
-c. przygotuj model dla jesionu i porównaj go z pozostałymi
-
-d. dla wybranego przez siebie modelu przygotuj wizualizację obejmującą punkty (dane rzeczywiste) i krzywe z modelu
 
 
 ##Propozycje do pracy z własnym zbiorem danych
