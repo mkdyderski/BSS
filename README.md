@@ -1,4 +1,4 @@
-# Materiały i zadania dla uczestników III Białowieskiej Szkoły Statystki (2024)
+# Materiały i zadania dla uczestników III Białowieskiej Szkoły Statystki (2025)
 
 W tym repozytorium przechowujemy materiały z kursu autorstwa dr. Patryka Czortka (BSG UW) i dr. hab. Marcina K. Dyderskiego (ID PAN). 
 Ponieważ zamieszczone datasety mają służyć jako przykłady danych z którymi często się współpracuje mogą zawierać drobne błędy formalne wprowadzone w celach dydaktycznych;)
